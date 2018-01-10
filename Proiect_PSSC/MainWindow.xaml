@@ -22,13 +22,15 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button Content="Vizualizare" HorizontalAlignment="Left" Margin="10,28,0,0" Grid.Row="5" VerticalAlignment="Top" Width="74" Height="25"/>
-            <Label Content="Cabinet" HorizontalAlignment="Left" Margin="66,23,0,0" VerticalAlignment="Top" Width="59"/>
-            <Label Content="Medic" HorizontalAlignment="Left" Margin="76,18,0,0" VerticalAlignment="Top" Width="49" Grid.Row="1"/>
-            <Label Content="Problema" HorizontalAlignment="Left" Margin="56,18,0,0" VerticalAlignment="Top" Width="69" Grid.Row="2"/>
-            <Label Content="Data programare" HorizontalAlignment="Left" Margin="18,14,0,0" VerticalAlignment="Top" Width="107" Grid.Row="3"/>
-            <Label Content="Ora programare" HorizontalAlignment="Left" Margin="28,20,0,0" VerticalAlignment="Top" Width="107" Grid.Row="4"/>
+            <Button Content="Vizualizare" HorizontalAlignment="Left" Margin="10,18,0,0" Grid.Row="6" VerticalAlignment="Top" Width="74" Height="25" Click="Button_Click_1"/>
+            <Label Content="Cabinet" HorizontalAlignment="Left" Margin="66,27,0,0" VerticalAlignment="Top" Width="59" Grid.Row="1"/>
+            <Label Content="Medic" HorizontalAlignment="Left" Margin="76,22,0,0" VerticalAlignment="Top" Width="49" Grid.Row="2"/>
+            <Label Content="Problema" HorizontalAlignment="Left" Margin="56,22,0,0" VerticalAlignment="Top" Width="69" Grid.Row="3"/>
+            <Label Content="Data programare" HorizontalAlignment="Left" Margin="18,17,0,0" VerticalAlignment="Top" Width="107" Grid.Row="4"/>
+            <Label Content="Ora programare" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Width="107" Grid.Row="5"/>
+            <Label Content="Nume pacient" HorizontalAlignment="Left" Margin="43,17,0,0" VerticalAlignment="Top" Width="93"/>
 
         </Grid>
 
@@ -37,19 +39,16 @@
 
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
-
-                <RowDefinition Height="*"/>
-
-                <RowDefinition Height="*"/>
-
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
 
             </Grid.RowDefinitions>
-            <Button Content="Adaugare" HorizontalAlignment="Left" Margin="97,28,0,0" Grid.Row="6" VerticalAlignment="Top" Width="74" Height="25"/>
-            <ComboBox HorizontalAlignment="Left" Margin="10,25,0,0" Grid.Row="5" VerticalAlignment="Top" Width="120">
+            <Button Content="Adaugare" HorizontalAlignment="Left" Margin="97,18,0,0" Grid.Row="7" VerticalAlignment="Top" Width="74" Height="25" Click="Button_Click"/>
+            <ComboBox x:Name="cb_ora" HorizontalAlignment="Left" Margin="10,22,0,0" Grid.Row="6" VerticalAlignment="Top" Width="120">
                 <ComboBoxItem Name="cbi1">9:00</ComboBoxItem>
                 <ComboBoxItem Name="cbi2">9:30</ComboBoxItem>
                 <ComboBoxItem Name="cbi3">10:00</ComboBoxItem>
@@ -69,9 +68,9 @@
                 <ComboBoxItem Name="cbi17">17:00</ComboBoxItem>
                 <ComboBoxItem Name="cbi18">17:30</ComboBoxItem>
             </ComboBox>
-            <DatePicker HorizontalAlignment="Left" Margin="10,19,0,0" Grid.Row="4" VerticalAlignment="Top" RenderTransformOrigin="1.157,0.583" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="161"/>
-            <ComboBox HorizontalAlignment="Left" Margin="10,24,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120">
+            <DatePicker x:Name="dt_data" HorizontalAlignment="Left" Margin="10,20,0,0" Grid.Row="5" VerticalAlignment="Top" RenderTransformOrigin="1.157,0.583" Width="120"/>
+            <TextBox x:Name="tb_problema" HorizontalAlignment="Left" Height="50" Margin="10,12,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" Grid.RowSpan="2"/>
+            <ComboBox x:Name="cb_medic" HorizontalAlignment="Left" Margin="10,26,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120">
                 <ComboBoxItem x:Name="med1" Content="Ion"/>
                 <ComboBoxItem x:Name="med2" Content="Gheorghe"/>
                 <ComboBoxItem x:Name="med3" Content="Gica"/>
@@ -79,7 +78,7 @@
                 <ComboBoxItem x:Name="med5" Content="Maria"/>
                 <ComboBoxItem x:Name="med6" Content="Vasile"/>
             </ComboBox>
-            <ComboBox HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120">
+            <ComboBox x:Name="cb_cabinet" HorizontalAlignment="Left" Margin="10,31,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120">
                 <ComboBoxItem x:Name="cab1" Content="1"/>
                 <ComboBoxItem x:Name="cab2" Content="2"/>
                 <ComboBoxItem x:Name="cab3" Content="3"/>
@@ -87,6 +86,7 @@
                 <ComboBoxItem x:Name="cab5" Content="5"/>
                 <ComboBoxItem x:Name="cab6" Content="6"/>
             </ComboBox>
+            <TextBox x:Name="tb_numepacient" HorizontalAlignment="Left" Height="23" Margin="10,20,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="141"/>
 
         </Grid>
 

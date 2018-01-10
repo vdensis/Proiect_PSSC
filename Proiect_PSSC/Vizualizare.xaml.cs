@@ -23,5 +23,23 @@ namespace Proiect_PSSC
         {
             InitializeComponent();
         }
+        PSSCEntities context = new PSSCEntities();
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                PSSCEntities Con = new PSSCEntities();
+                List<TABELA_CONSULTATIE> TableData = Con.TABELA_CONSULTATIE.ToList();
+                grd_consult.ItemsSource = TableData;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+
+    
     }
 }

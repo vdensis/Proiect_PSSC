@@ -15,3 +15,8 @@ C:\Users\Denis\source\repos\Proiect_PSSC\obj\Debug\Proiect_PSSC.exe
 C:\Users\Denis\source\repos\Proiect_PSSC\obj\Debug\Proiect_PSSC.pdb
 C:\Users\Denis\source\repos\Proiect_PSSC\obj\Debug\Vizualizare.g.cs
 C:\Users\Denis\source\repos\Proiect_PSSC\obj\Debug\Vizualizare.baml
+C:\Users\Denis\source\repos\Proiect_PSSC\bin\Debug\EntityFramework.dll
+C:\Users\Denis\source\repos\Proiect_PSSC\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Denis\source\repos\Proiect_PSSC\bin\Debug\EntityFramework.xml
+C:\Users\Denis\source\repos\Proiect_PSSC\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Denis\source\repos\Proiect_PSSC\obj\Debug\Proiect_PSSC_Content.g.cs

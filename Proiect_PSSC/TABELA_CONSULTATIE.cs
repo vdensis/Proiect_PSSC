@@ -15,10 +15,11 @@ namespace Proiect_PSSC
     public partial class TABELA_CONSULTATIE
     {
         public int ID_CONSULTATIE { get; set; }
-        public Nullable<int> CABINET { get; set; }
-        public Nullable<int> ID_MEDIC { get; set; }
+        public string NUME_PACIENT { get; set; }
+        public string CABINET { get; set; }
+        public string NUME_MEDIC { get; set; }
         public string PROBLEMA { get; set; }
-        public Nullable<System.DateTime> DATA { get; set; }
+        public string DATA { get; set; }
         public string ORA { get; set; }
     }
 }

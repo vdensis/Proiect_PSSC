@@ -14,7 +14,7 @@ namespace Proiect_PSSC
     
     public partial class TABELA_MEDIC
     {
-        public string ID_MEDIC { get; set; }
+        public int ID_MEDIC { get; set; }
         public string NUME_MEDIC { get; set; }
     }
 }

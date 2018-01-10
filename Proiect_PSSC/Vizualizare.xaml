@@ -5,9 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proiect_PSSC"
         mc:Ignorable="d"
-        Title="Vizualizare" Height="414.05" Width="383.058">
-    <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="363" Margin="10,10,0,0" VerticalAlignment="Top" Width="355"/>
+        Title="Vizualizare" Height="414.05" Width="622.314" Loaded="Window_Loaded">
+    <Grid Margin="0,0,2,0">
+        <DataGrid x:Name="grd_consult" HorizontalAlignment="Left" Height="363" Margin="10,10,0,0" VerticalAlignment="Top" Width="593">
+
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Header="Nume pacient" Binding="{Binding Path=NUME_PACIENT}" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="Cabinet" Binding="{Binding Path=CABINET}" IsReadOnly="True" Width="120"/>
+                <DataGridTextColumn Header="Medic" Binding="{Binding Path=NUME_MEDIC}" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="Problema" Binding="{Binding Path=PROBLEMA}" IsReadOnly="True" Width="120"/>
+                <DataGridTextColumn Header="Data" Binding="{Binding Path=DATA}" IsReadOnly="True" Width="50"/>
+                <DataGridTextColumn Header="Ora" Binding="{Binding Path=ORA}" IsReadOnly="True" Width="100"/>
+            </DataGrid.Columns>-->
+
+        </DataGrid>
 
     </Grid>
 </Window>
